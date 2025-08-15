@@ -1,0 +1,209 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Thai:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: rgb(235, 232, 227);
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    /* position: relative; */
+    background-color: rgb(235, 232, 227);
+       /* height: 80px; */
+    padding: 10px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Inter Tight", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------------- */
+.box2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    /* ระยะห่างจากด้านบน */
+    padding: 80px;
+    /* background: #f5f5f5; */
+    /* พื้นหลังสีอ่อนเพื่อให้เงาเด่น */
+}
+
+.box2 .card {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* เงาเริ่มต้น */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* การเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+.box2 .card:hover {
+    transform: translateY(-10px);
+    /* ยกการ์ดขึ้น 10px */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    /* เงาที่เข้มและกว้างขึ้น */
+}
+
+.box2 .card.concept {
+    background-color: #a3d8f4;
+}
+
+.box2 .card.design {
+    background-color: #f4c430;
+}
+
+.box2 .card.design:hover {
+    background-color: #f4c430;
+    /* รักษาสีเดิม หรือเปลี่ยนตามต้องการ */
+}
+
+.box2 .card.publish {
+    background-color: #a3e4a3;
+}
+
+.box2 .card.publish:hover {
+    background-color: #a3e4a3;
+    /* รักษาสีเดิม หรือเปลี่ยนตามต้องการ */
+}
+
+.box2 .card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.box2 .card p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.box2 .card span {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.box1 {
+    position: relative;
+    right: 50px;
+    /* top: 20px; */
+}
+
+.text1 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 20%;
+    top: 5vh;
+    position: relative;
+}
+
+.text2 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 22%;
+    top: 2vh;
+    position: relative;
+}
+
+nav .Ro1 {
+    display: flex;
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    gap: 40px;
+    /* ระยะห่างระหว่างลิงก์ */
+    padding: 15px 0;
+    flex-wrap: wrap;
+    /* ให้ขึ้นบรรทัดใหม่เมื่อหน้าจอแคบ */
+}
+
+.Ro1 a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.Ro1 a:hover {
+    color: #ff6600;
+    border-bottom: 0px solid #ff6600;
+    /* padding-bottom: 5px; */
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px -20px;
+    /* background-color: #ffffff;  */
+    padding: 10px;
+    position: relative;
+    top: 50px;
+}
+
+.image-container img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* top: 10vh; */
+    position: relative;
+    /* เพิ่มเงาเพื่อให้รูปเด่นขึ้น (ถ้าต้องการ) */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: 208.8vh;
+    height: 250px;
+    top: 90%;
+} */
+
+    /* width: 199.5vh; */

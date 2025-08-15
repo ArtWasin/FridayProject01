@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวอย่าง Line Sticker</title>
+    <link rel="stylesheet" href="../css/examples.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>StickerBlox</h1>
+            <nav>
+                <div class="Ro1">
+                    <a href="Index.html" aria-label="กลับสู่หน้าแรก">Home</a>
+                    <a href="steps.html" aria-label="ขั้นตอนการสร้าง">Creation steps</a>
+                    <a href="tips.html" aria-label="คำแนะนำ">Advice</a>
+                    <a href="examples.html" aria-label="ตัวอย่าง">Example</a>
+                    <a href="contact.html" aria-label="ติดต่อเรา">Contact us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="box3">
+        <h1>Example Stickers</h1>
+    </div>
+    <main>
+        <div class="img-box"><img src="./images/1.png" alt="ตัวอย่างสติกเกอร์ 1" class="example-image"></div>
+        <div class="img-box"><img src="./images/2.png" alt="ตัวอย่างสติกเกอร์ 2" class="example-image"></div>
+        <div class="img-box"><img src="./images/3.png" alt="ตัวอย่างสติกเกอร์ 3" class="example-image"></div>
+        <div class="img-box"><img src="./images/4.png" alt="ตัวอย่างสติกเกอร์ 4" class="example-image"></div>
+        <div class="img-box"><img src="./images/5.png" alt="ตัวอย่างสติกเกอร์ 5" class="example-image"></div>
+        <div class="img-box"><img src="./images/6.png" alt="ตัวอย่างสติกเกอร์ 6" class="example-image"></div>
+        <div class="img-box"><img src="./images/7.png" alt="ตัวอย่างสติกเกอร์ 7" class="example-image"></div>
+        <div class="img-box"><img src="./images/8.png" alt="ตัวอย่างสติกเกอร์ 8" class="example-image"></div>
+        <div class="img-box"><img src="./images/9.png" alt="ตัวอย่างสติกเกอร์ 9" class="example-image"></div>
+        <div class="img-box"><img src="./images/10.png" alt="ตัวอย่างสติกเกอร์ 10" class="example-image"></div>
+        <div class="img-box"><img src="./images/11.png" alt="ตัวอย่างสติกเกอร์ 11" class="example-image"></div>
+        <div class="img-box"><img src="./images/12.png" alt="ตัวอย่างสติกเกอร์ 12" class="example-image"></div>
+        <div class="img-box"><img src="./images/13.png" alt="ตัวอย่างสติกเกอร์ 13" class="example-image"></div>
+        <div class="img-box"><img src="./images/14.png" alt="ตัวอย่างสติกเกอร์ 14" class="example-image"></div>
+        <div class="img-box"><img src="./images/15.png" alt="ตัวอย่างสติกเกอร์ 15" class="example-image"></div>
+        <div class="img-box"><img src="./images/16.png" alt="ตัวอย่างสติกเกอร์ 16" class="example-image"></div>
+        <div class="img-box"><img src="./images/17.png" alt="ตัวอย่างสติกเกอร์ 17" class="example-image"></div>
+        <div class="img-box"><img src="./images/18.png" alt="ตัวอย่างสติกเกอร์ 18" class="example-image"></div>
+        <div class="img-box"><img src="./images/19.png" alt="ตัวอย่างสติกเกอร์ 19" class="example-image"></div>
+        <div class="img-box"><img src="./images/20.png" alt="ตัวอย่างสติกเกอร์ 20" class="example-image"></div>
+        <div class="img-box"><img src="./images/21.png" alt="ตัวอย่างสติกเกอร์ 21" class="example-image"></div>
+        <div class="img-box"><img src="./images/22.png" alt="ตัวอย่างสติกเกอร์ 22" class="example-image"></div>
+        <div class="img-box"><img src="./images/23.png" alt="ตัวอย่างสติกเกอร์ 23" class="example-image"></div>
+        <div class="img-box"><img src="./images/24.png" alt="ตัวอย่างสติกเกอร์ 24" class="example-image"></div>
+        <div class="modal" id="imageModal">
+            <span class="close-button">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="ขยายภาพสติกเกอร์">
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 กลุ่มนักศึกษาออกแบบ Line Sticker</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.example-image');
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeButton = document.querySelector('.close-button');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImage.src = image.src;
+                modalImage.alt = image.alt;
+            });
+        });
+
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

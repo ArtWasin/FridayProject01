@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Inter Tight", sans-serif;
+    background-image: url('https://images.alphacoders.com/135/1354746.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast; /* เพิ่มความคมชัดสำหรับ Webkit */
+    image-rendering: crisp-edges; /* เพิ่มความคมชัดทั่วไป */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(235, 232, 227);
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 2.5rem;
+    color: #222;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-family: "Sarabun", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+nav .Ro1 {
+    display: flex;
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    gap: 40px;
+    /* ระยะห่างระหว่างลิงก์ */
+    padding: 15px 0;
+    flex-wrap: wrap;
+    /* ให้ขึ้นบรรทัดใหม่เมื่อหน้าจอแคบ */
+}
+
+.Ro1 a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.Ro1 a:hover {
+    color: #ff6600;
+    border-bottom: 0px solid #ff6600;
+    /* padding-bottom: 5px; */
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.member-section {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.member-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.15); /* ลดความทึบเพื่อให้พื้นหลังชัด */
+    backdrop-filter: blur(12px); /* เพิ่ม blur เพื่อความนุ่มนวล */
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-card p {
+    font-family: "Sarabun", sans-serif;
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}

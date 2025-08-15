@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+     background-color: rgb(235, 232, 227);
+     margin: 0;
+     font-family: sans-serif;
+     /* height: 200vh; */
+     position: relative;
+ }
+
+header {
+     background-color: #fff;
+     padding: 20px;
+     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+ }
+
+ header {
+     background-color: rgb(235, 232, 227);
+     padding: 20px 40px;
+     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+ }
+
+  .header-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     /* ซ้าย-ขวา */
+     flex-wrap: wrap;
+ }
+
+
+
+ h1 {
+     font-family: "Inter Tight", sans-serif;
+     text-align:left;
+     margin-bottom: 10px;
+ }
+
+
+ nav .Ro1 {
+     display: flex;
+     justify-content: center;
+     /* จัดให้อยู่ตรงกลาง */
+     gap: 40px;
+     /* ระยะห่างระหว่างลิงก์ */
+     padding: 15px 0;
+     flex-wrap: wrap;
+     /* ให้ขึ้นบรรทัดใหม่เมื่อหน้าจอแคบ */
+ }
+
+.Ro1 a {
+     text-decoration: none;
+     color: #222;
+     font-size: 18px;
+     font-weight: 500;
+     transition: color 0.3s ease;
+ }
+
+ .Ro1 a:hover {
+     color: #ff6600;
+     border-bottom: 1px solid #ff6600;
+     /* padding-bottom: 5px; */
+ }
